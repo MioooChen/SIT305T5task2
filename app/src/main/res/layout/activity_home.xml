@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewYouTubeUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youtube URL:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextYouTubeUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewYouTubeUrl"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_border"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:hint="Enter Youtube URL"/>
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextYouTubeUrl"
+        android:layout_marginTop="16dp"
+        android:text="Play"/>
+
+    <Button
+        android:id="@+id/buttonAddToPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPlay"
+        android:layout_marginTop="8dp"
+        android:text="Add To Playlist"/>
+
+    <Button
+        android:id="@+id/buttonMyPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAddToPlaylist"
+        android:layout_marginTop="8dp"
+        android:text="My Playlist"/>
+
+</RelativeLayout>
